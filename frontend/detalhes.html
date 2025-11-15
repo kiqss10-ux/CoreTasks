@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CoreTasks - Detalhes da Tarefa</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Poppins:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1><a href="index.html" style="text-decoration: none; color: inherit; cursor: pointer;">CoreTasks</a></h1>
+    <div class="buttons">
+      <button onclick="window.location.href='index.html'">Voltar</button>
+      <button id="increase-font" aria-label="Aumentar tamanho da fonte">A+</button>
+      <button id="decrease-font" aria-label="Diminuir tamanho da fonte">A-</button>
+    </div>
+  </header>
+
+  <main>
+    <h2>Detalhes da Tarefa</h2>
+
+    <div id="taskDetails" class="task-details">
+      <p><strong>Carregando...</strong></p>
+    </div>
+
+    <div class="buttons" id="actions" style="display:none;">
+      <button id="editTask">✏️ Editar</button>
+      <button id="deleteTask" style="background-color:#d9534f;">Excluir</button>
+    </div>  </main>
+
+  <script src="detalhes.js"></script>
+</body>
+</html>

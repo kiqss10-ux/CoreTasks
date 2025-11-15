@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CoreTasks - Home</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Poppins:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1><a href="index.html" style="text-decoration: none; color: inherit; cursor: pointer;">CoreTasks</a></h1>
+    <div class="buttons">
+      <button onclick="window.location.href='nova-tarefa.html'">➕ Nova Tarefa</button>
+      <button id="increase-font" aria-label="Aumentar tamanho da fonte">A+</button>
+      <button id="decrease-font" aria-label="Diminuir tamanho da fonte">A-</button>	
+    </div>
+  </header>
+
+  <main>
+    <h2>Lista de Tarefas</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Nome</th>
+          <th>Descrição</th>
+          <th>Início</th>
+          <th>Fim</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody id="tasksTableBody"></tbody>
+    </table>
+
+    <div class="pagination">
+      <button id="prevPage">⬅️ Anterior</button>
+      <span id="pageInfo"></span>
+      <button id="nextPage">Próxima ➡️</button>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
+

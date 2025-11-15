@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CoreTasks - Editar Tarefa</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Poppins:wght@700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header>
+    <h1><a href="index.html" style="text-decoration: none; color: inherit; cursor: pointer;">CoreTasks</a></h1>
+    <div class="buttons">
+      <button onclick="window.location.href='index.html'">Voltar</button>
+      <button id="increase-font" aria-label="Aumentar tamanho da fonte">A+</button>
+      <button id="decrease-font" aria-label="Diminuir tamanho da fonte">A-</button>
+    </div>
+  </header>
+
+  <main>
+    <h2>Editar Tarefa</h2>
+
+    <form id="editTaskForm">
+      <label for="name">Nome:</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="description">Descrição:</label>
+      <textarea id="description" name="description" rows="4" required></textarea>
+
+      <label for="startdate">Data de Início:</label>
+      <input type="date" id="startdate" name="startdate" />
+
+      <label for="enddate">Data de Fim:</label>
+      <input type="date" id="enddate" name="enddate" />
+
+      <label for="completed">Status:</label>
+      <select id="completed" name="completed" required>
+        <option value="">Selecione...</option>
+        <option value="true">Concluída</option>
+        <option value="false">Não concluída</option>
+      </select>
+
+      <button type="submit">Salvar Alterações</button>
+    </form>
+
+    <p id="message" style="margin-top:20px; font-weight:bold;"></p>
+  </main>
+
+  <script src="editar.js"></script>
+</body>
+</html>
