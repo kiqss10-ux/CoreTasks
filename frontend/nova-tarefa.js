@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:3001/api/tasks";
+const API_URL = "https://coretasks-1.onrender.com/tasks";
 
 async function createTask(task) {
   try {
