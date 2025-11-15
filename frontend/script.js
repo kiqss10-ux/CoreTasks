@@ -1,4 +1,4 @@
-const API_URL = "https://coretasks-1.onrender.com/tasks";
+const API_URL = "https://coretasks-1.onrender.com/api/tasks";
 let currentPage = 1;
 const pageSize = 5; // tarefas por página
 let allTasks = [];

@@ -1,4 +1,4 @@
-const API_URL = "https://coretasks-1.onrender.com/tasks";
+const API_URL = "https://coretasks-1.onrender.com/api/tasks";
 
 function getTaskIdFromUrl() {
   const params = new URLSearchParams(window.location.search);

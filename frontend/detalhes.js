@@ -1,4 +1,4 @@
-const API_URL = "https://coretasks-1.onrender.com/tasks";
+const API_URL = "https://coretasks-1.onrender.com/api/tasks";
 
 // Função para pegar parâmetro da URL (?id=123)
 function getTaskIdFromUrl() {
